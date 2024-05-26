@@ -5,9 +5,9 @@ from discord.ext import commands
 from keep_alive import keep_alive
 keep_alive()
 
-bot = Bot(token=os.environ.get('token'))
-
 token = os.getenv("NGAY_TOKEN")
+
+bot = Bot(token=os.environ.get('token'))
 
 intents = discord.Intents.default()
 intents.message_content = True
